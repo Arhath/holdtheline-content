@@ -1,0 +1,13 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/player_color.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/player_color.vjs_c" />
+	</scripts>
+	<Panel class="PlayerColorRoot">
+		
+	</Panel>
+</root>
+
