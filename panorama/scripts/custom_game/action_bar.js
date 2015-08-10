@@ -18,11 +18,14 @@ function UpdateAbilityList()
 	abilityListPanel.RemoveAndDeleteChildren();
 	
 	var queryUnit = Players.GetLocalPlayerPortraitUnit();
-	//if(Entities.GetUnitName(queryUnit) == "npc_spellbringer") {
+	//if(Entities.IsRealHero(queryUnit) && Entities.IsControllableByPlayer(queryUni, Players.GetLocalPlayer())) {
 		for ( var i = 0; i < Entities.GetAbilityCount( queryUnit ); ++i )
 		{
 			var ability = Entities.GetAbility( queryUnit, i );
 			if ( ability == -1 )
+				continue;
+			
+			if (Abilities.GetAbilityName(ability) != "bottle_health" && Abilities.GetAbilityName(ability) != "bottle_mana")
 				continue;
 
 			if ( !Abilities.IsDisplayedAbility(ability) )
