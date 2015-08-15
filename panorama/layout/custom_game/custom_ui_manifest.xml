@@ -44,5 +44,6 @@
     <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/action_bar.xml" />
 	<CustomUIElement type="Hud" 				layoutfile="file://{resources}/layout/custom_game/resource.xml" />
     <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/player_color.xml" />
+	<CustomUIElement type="Hud" 				layoutfile="file://{resources}/layout/custom_game/scripts.xml" />
   </Panel>
 </root>
