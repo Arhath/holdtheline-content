@@ -25,7 +25,7 @@ function UpdateAbilityList()
 			if ( ability == -1 )
 				continue;
 			
-			if (Abilities.GetAbilityName(ability) != "bottle_health" && Abilities.GetAbilityName(ability) != "bottle_mana")
+			if (Abilities.GetAbilityName(ability) != "bottle_health" && Abilities.GetAbilityName(ability) != "bottle_mana" && Abilities.GetAbilityName(ability) != "bottle_shop_ability_toggle")
 				continue;
 
 			if ( !Abilities.IsDisplayedAbility(ability) )
