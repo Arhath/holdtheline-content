@@ -1,0 +1,116 @@
+CDOTABaseAbility
+extends CBaseEntity
+No Description Set
+Function	Signature	Description
+CanAbilityBeUpgraded	<unknown> CanAbilityBeUpgraded()	
+CastAbility	void CastAbility()	No Description Set
+ContinueCasting	bool ContinueCasting()	No Description Set
+CreateVisibilityNode	void CreateVisibilityNode(Vector vLocation, float fRadius, float fDuration)	No Description Set
+DecrementModifierRefCount	void DecrementModifierRefCount()	No Description Set
+EndChannel	void EndChannel(bool bInterrupted)	Param: bool bInterrupted
+EndCooldown	void EndCooldown()	Clear the cooldown remaining on this ability.
+GetAbilityDamage	int GetAbilityDamage()	No Description Set
+GetAbilityDamageType	int GetAbilityDamageType()	No Description Set
+GetAbilityIndex	int GetAbilityIndex()	No Description Set
+GetAbilityName	string GetAbilityName()	No Description Set
+GetAbilityTargetFlags	int GetAbilityTargetFlags()	No Description Set
+GetAbilityTargetTeam	int GetAbilityTargetTeam()	No Description Set
+GetAbilityTargetType	int GetAbilityTargetType()	No Description Set
+GetAbilityType	int GetAbilityType()	No Description Set
+GetAnimationIgnoresModelScale	bool GetAnimationIgnoresModelScale()	No Description Set
+GetAssociatedPrimaryAbilities	string GetAssociatedPrimaryAbilities()	No Description Set
+GetAssociatedSecondaryAbilities	string GetAssociatedSecondaryAbilities()	No Description Set
+GetAutoCastState	bool GetAutoCastState()	No Description Set
+GetBackswingTime	float GetBackswingTime()	No Description Set
+GetBehavior	int GetBehavior()	No Description Set
+GetCaster	handle GetCaster()	No Description Set
+GetCastPoint	float GetCastPoint()	No Description Set
+GetCastRange	int GetCastRange(Vector vLocation, handle hTarget)	No Description Set
+GetChannelledManaCostPerSecond	int GetChannelledManaCostPerSecond(int iLevel)	No Description Set
+GetChannelStartTime	float GetChannelStartTime()	No Description Set
+GetChannelTime	float GetChannelTime()	No Description Set
+GetCloneSource	handle GetCloneSource()	No Description Set
+GetConceptRecipientType	int GetConceptRecipientType()	No Description Set
+GetCooldown	float GetCooldown(int iLevel)	Get the cooldown duration for this ability at a given level, not the amount of cooldown actually left.
+GetCooldownTime	float GetCooldownTime()	No Description Set
+GetCooldownTimeRemaining	float GetCooldownTimeRemaining()	No Description Set
+GetCursorPosition	Vector GetCursorPosition()	No Description Set
+GetCursorTarget	handle GetCursorTarget()	No Description Set
+GetCursorTargetingNothing	bool GetCursorTargetingNothing()	No Description Set
+GetDuration	float GetDuration()	No Description Set
+GetGoldCost	int GetGoldCost(int iLevel)	No Description Set
+GetGoldCostForUpgrade	int GetGoldCostForUpgrade(int iLevel)	No Description Set
+GetHeroLevelRequiredToUpgrade	int GetHeroLevelRequiredToUpgrade()	No Description Set
+GetIntrinsicModifierName	string GetIntrinsicModifierName()	No Description Set
+GetLevel	int GetLevel()	Get the current level of the ability
+GetLevelSpecialValueFor	table GetLevelSpecialValueFor(string szName, int nLevel)	No Description Set
+GetManaCost	int GetManaCost(int iLevel)	No Description Set
+GetMaxLevel	int GetMaxLevel()	No Description Set
+GetModifierValue	float GetModifierValue()	No Description Set
+GetModifierValueBonus	float GetModifierValueBonus()	No Description Set
+GetPlaybackRateOverride	float GetPlaybackRateOverride()	No Description Set
+GetSharedCooldownName	string GetSharedCooldownName()	No Description Set
+GetSpecialValueFor	table GetSpecialValueFor(string szName)	No Description Set
+GetStolenActivityModifier	string GetStolenActivityModifier()	No Description Set
+GetToggleState	bool GetToggleState()	No Description Set
+HeroXPChange	bool HeroXPChange(float flXP)	No Description Set
+IncrementModifierRefCount	void IncrementModifierRefCount()	No Description Set
+IsActivated	bool IsActivated()	No Description Set
+IsAttributeBonus	bool IsAttributeBonus()	No Description Set
+IsChanneling	bool IsChanneling()	Returns whether the ability is currently channeling.
+IsCooldownReady	bool IsCooldownReady()	No Description Set
+IsCosmetic	bool IsCosmetic(handle hEntity)	No Description Set
+IsFullyCastable	bool IsFullyCastable()	Returns whether the ability can be cast.
+IsHidden	bool IsHidden()	No Description Set
+IsHiddenWhenStolen	bool IsHiddenWhenStolen()	No Description Set
+IsInAbilityPhase	bool IsInAbilityPhase()	Returns whether the ability is currently casting.
+IsItem	bool IsItem()	No Description Set
+IsOwnersGoldEnough	bool IsOwnersGoldEnough(int nIssuerPlayerID)	No Description Set
+IsOwnersGoldEnoughForUpgrade	bool IsOwnersGoldEnoughForUpgrade()	No Description Set
+IsOwnersManaEnough	bool IsOwnersManaEnough()	No Description Set
+IsPassive	bool IsPassive()	No Description Set
+IsSharedWithTeammates	bool IsSharedWithTeammates()	No Description Set
+IsStealable	bool IsStealable()	No Description Set
+IsStolen	bool IsStolen()	No Description Set
+IsToggle	bool IsToggle()	No Description Set
+IsTrained	bool IsTrained()	No Description Set
+MarkAbilityButtonDirty	void MarkAbilityButtonDirty()	Mark the ability button for this ability as needing a refresh
+NumModifiersUsingAbility	int NumModifiersUsingAbility()	No Description Set
+OnAbilityPhaseInterrupted	void OnAbilityPhaseInterrupted()	No Description Set
+OnAbilityPhaseStart	bool OnAbilityPhaseStart()	No Description Set
+OnAbilityPinged	void OnAbilityPinged(int nPlayerID)	No Description Set
+OnChannelFinish	void OnChannelFinish(bool bInterrupted)	No Description Set
+OnChannelThink	void OnChannelThink(float flInterval)	No Description Set
+OnHeroCalculateStatBonus	void OnHeroCalculateStatBonus()	No Description Set
+OnHeroLevelUp	void OnHeroLevelUp()	No Description Set
+OnInventoryContentsChanged	void OnInventoryContentsChanged()	No Description Set
+OnOwnerDied	void OnOwnerDied()	No Description Set
+OnOwnerSpawned	void OnOwnerSpawned()	No Description Set
+OnSpellStart	void OnSpellStart()	No Description Set
+OnToggle	void OnToggle()	No Description Set
+OnUpgrade	void OnUpgrade()	No Description Set
+PayGoldCost	void PayGoldCost()	No Description Set
+PayGoldCostForUpgrade	void PayGoldCostForUpgrade()	No Description Set
+PayManaCost	void PayManaCost()	No Description Set
+PlaysDefaultAnimWhenStolen	bool PlaysDefaultAnimWhenStolen()	No Description Set
+ProcsMagicStick	bool ProcsMagicStick()	No Description Set
+RefCountsModifiers	bool RefCountsModifiers()	No Description Set
+RefundManaCost	void RefundManaCost()	No Description Set
+ResetToggleOnRespawn	bool ResetToggleOnRespawn()	No Description Set
+SetAbilityIndex	void SetAbilityIndex(int iIndex)	No Description Set
+SetActivated	void SetActivated(bool bActivated)	No Description Set
+SetChanneling	void SetChanneling(bool bChanneling)	No Description Set
+SetHidden	void SetHidden(bool bHidden)	No Description Set
+SetInAbilityPhase	void SetInAbilityPhase(bool bInAbilityPhase)	No Description Set
+SetLevel	void SetLevel(int iLevel)	Sets the level of this ability.
+SetOverrideCastPoint	void SetOverrideCastPoint(float flCastPoint)	No Description Set
+SetRefCountsModifiers	void SetRefCountsModifiers(bool bRefCounts)	No Description Set
+SetStolen	void SetStolen(bool bStolen)	No Description Set
+ShouldUseResources	bool ShouldUseResources()	No Description Set
+SpeakAbilityConcept	void SpeakAbilityConcept(int iConcept)	No Description Set
+SpeakTrigger	bool SpeakTrigger()	No Description Set
+StartCooldown	void StartCooldown(float flCooldown)	param: flCooldown
+ToggleAbility	void ToggleAbility()	No Description Set
+ToggleAutoCast	void ToggleAutoCast()	No Description Set
+UpgradeAbility	void UpgradeAbility(bool bSupressSpeech)	No Description Set
+UseResources	void UseResources(bool bMana, bool bGold, bool bCooldown)	No Description Set
