@@ -76,6 +76,7 @@ function ActivateAbility()
 
 function DoubleClickAbility()
 {
+	$.Msg('#');
 	var ability = $.GetContextPanel().GetAttributeInt( "ability", -1 );
 	var queryUnit = $.GetContextPanel().GetAttributeInt( "queryUnit", -1 );
 	Abilities.CreateDoubleTapCastOrder( ability, queryUnit );
