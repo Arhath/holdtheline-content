@@ -13,10 +13,16 @@ function OnRightButtonPressed(event)
 	mouseEntities = mouseEntities.filter( function(e) { return e.entityIndex != mainSelected; } )
 	
 	// Unit rightclick
+	if (mouseEntities.length > 0)
+	{
+		var t = mouseEntities[0].entityIndex;
+		GameEvents.SendCustomGameEventToServer( "unit_right_click", { pID: iPlayerID, mainSelected: mainSelected, mouseX: GamePos[0], mouseY: GamePos[1] , name: event, targetIndex: t})
+	}
+	else
+	{
+		GameEvents.SendCustomGameEventToServer( "unit_right_click", { pID: iPlayerID, mainSelected: mainSelected, mouseX: GamePos[0], mouseY: GamePos[1] , name: event})
+	}
 	
-
-	GameEvents.SendCustomGameEventToServer( "unit_right_click", { pID: iPlayerID, mainSelected: mainSelected, mouseX: GamePos[0], mouseY: GamePos[1] , name: event})
-
 	return false;
 }
 
@@ -33,7 +39,6 @@ function OnLeftButtonPressed(event)
 	
 	// Unit rightclick
 	
-
 	GameEvents.SendCustomGameEventToServer( "unit_left_click", { pID: iPlayerID, mainSelected: mainSelected, mouseX: GamePos[0], mouseY: GamePos[1] , name: event})
 
 	return false;
