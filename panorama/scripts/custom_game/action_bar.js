@@ -27,6 +27,8 @@ function UpdateAbilityList()
 			
 			if (Abilities.GetAbilityName(ability) != "bottle_health" && Abilities.GetAbilityName(ability) != "bottle_mana" && Abilities.GetAbilityName(ability) != "bottle_shop_ability_toggle" &&  Abilities.GetAbilityName(ability) != "gate_ability_fortify" &&  Abilities.GetAbilityName(ability) != "glyph_ability_mana")
 				continue;
+				
+			//Abilities.ExecuteAbility( ability, queryUnit, false );
 
 			if ( !Abilities.IsDisplayedAbility(ability) )
 				continue;
