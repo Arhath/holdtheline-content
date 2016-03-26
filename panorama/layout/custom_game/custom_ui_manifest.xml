@@ -45,5 +45,7 @@
 	<CustomUIElement type="Hud" 				layoutfile="file://{resources}/layout/custom_game/resource.xml" />
     <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/player_color.xml" />
 	<CustomUIElement type="Hud" 				layoutfile="file://{resources}/layout/custom_game/scripts.xml" />
+	<CustomUIElement type="Hud"             layoutfile="file://{resources}/layout/custom_game/ability_level_overlay.xml" /> 
+	<CustomUIElement type="Hud"             layoutfile="file://{resources}/layout/custom_game/boss_health.xml" /> 
   </Panel>
 </root>

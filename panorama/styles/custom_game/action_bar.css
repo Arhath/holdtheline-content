@@ -3,7 +3,7 @@
 
 	horizontal-align: center;
 	vertical-align: bottom;
-	margin-bottom: 0px;
+	margin-bottom: 12px;
 	margin-left: 895px;
 }
 
@@ -11,16 +11,16 @@
 {
 	flow-children: down;
 	border: 0px solid black;
-	background-color: #272823;
+	background-color: transparent;
 }
 
 .AbilityPanel
 {	
 
-	margin-left: 14px;
-	margin-right: 25px;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-left: 4px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 #ButtonAndLevel
@@ -30,8 +30,8 @@
 
 #AbilityButton
 {
-	width: 50px;
-	height: 50px;
+	width: 53px;
+	height: 53px;
 	border: 2px solid black;
 }
 
@@ -52,20 +52,20 @@
 
 .no_level DOTAAbilityImage
 {
-	desaturation: 1;
+	saturation: 0;
 	wash-color: #303030;
 }
 
 .insufficient_mana DOTAAbilityImage
 {
-	desaturation: 1;
+	saturation: 0	;
 	wash-color: #1569be;
 }
 
 
 #AbilityStatusBorder
 {
-	margin: 2px;
+	margin: 0px;
 	border: 4px solid transparent;
 }
 
@@ -87,7 +87,7 @@
 
 .LevelPanel
 {
-	width: 12px;
+	width: 40px;
 	height: 12px;
 	margin-left: 1px;
 	margin-right: 1px;

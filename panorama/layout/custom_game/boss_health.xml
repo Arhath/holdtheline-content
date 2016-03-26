@@ -1,0 +1,18 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/boss_health.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/boss_health.vjs_c" />
+	</scripts>
+	<Panel class="boss_health_container" hittest="false">
+
+		<Panel id="boss_health_outer" class="invisible" hittest="false">
+			<Panel id="boss_current_health" hittest="false">
+				<Image id="boss_fill_image" src="s2r://panorama/images/custom_game/ui/healthbar_fill_png.vtex" />
+			</Panel>
+			<Label id="boss_name" text="boss_name" />
+		</Panel>
+	</Panel>
+</root>
